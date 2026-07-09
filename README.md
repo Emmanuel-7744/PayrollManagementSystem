@@ -1,40 +1,84 @@
 # Payroll Management System
 
-A Payroll Management System backend built using Flask.
+A full-stack Payroll Management System developed using React (Frontend) and Flask (Backend).
 
 ## Features
 
-- JWT Authentication
-- Employee Management (CRUD)
+- Secure Login Authentication
+- Dashboard
+- Employee Management
+  - Add Employee
+  - Edit Employee
+  - Delete Employee
+  - Search Employee
 - Attendance Management
+  - Mark Attendance
+  - Edit Attendance
+  - Delete Attendance
 - Leave Management
 - Salary Management
-- Salary Calculation
-- Payslip PDF Generation (ReportLab)
+- Payslip Management
 
-## Technologies Used
+## Tech Stack
 
+### Frontend
+- React.js
+- React Router
+- React Icons
+- Axios
+- Vite
+
+### Backend
 - Python
 - Flask
 - Flask-JWT-Extended
 - SQLAlchemy
 - SQLite
-- ReportLab
 
 ## Project Structure
 
 ```
-payroll-backend/
-├── app/
-├── migrations/
-├── requirements.txt
-└── run.py
+PayrollManagementSystem/
+│
+├── payroll-backend/
+│   ├── app/
+│   ├── migrations/
+│   ├── run.py
+│   └── requirements.txt
+│
+├── payroll-frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+└── README.md
 ```
 
-## Run the Project
+## Installation
+
+### Backend
 
 ```bash
-pip install -r payroll-backend/requirements.txt
 cd payroll-backend
-flask --app run.py --debug run
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python run.py
 ```
+
+### Frontend
+
+```bash
+cd payroll-frontend
+npm install
+npm run dev
+```
+
+## Login
+
+Use the credentials available in your backend database.
+
+## Author
+
+Emmanuel John
